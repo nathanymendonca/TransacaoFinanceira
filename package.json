@@ -1,0 +1,18 @@
+
+{
+  "name": "transacao-financeira",
+  "version": "1.0.0",
+  "description": "Sistema de transações financeiras em Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "keywords": ["transacao", "financeira", "nodejs"],
+  "author": "",
+  "license": "ISC"
+}
