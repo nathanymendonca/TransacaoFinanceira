@@ -6,36 +6,36 @@ Este é um sistema de transações financeiras implementado em Python que proces
 ## Estrutura do Projeto
 
 ```
-├── models/                        # Modelos de domínio
-│   ├── conta_saldo.py             # Modelo para saldo da conta
-│   └── transacao.py               # Modelo para transação
+├── models/                          # Modelos de domínio
+│   ├── conta_saldo.py               # Modelo para saldo da conta
+│   └── transacao.py                 # Modelo para transação
 
-├── repositories/                  # Repositórios para acesso a dados
-│   └── conta_repository.py        # Repositório de contas
+├── repositories/                    # Repositórios para acesso a dados
+│   └── conta_repository.py          # Repositório de contas
 
-├── services/                      # Serviços de negócio
-│   ├── processors/                # Processadores específicos
-│   │   ├── deposito_processor.py      # Processador de depósitos
-│   │   ├── saque_processor.py         # Processador de saques
-│   │   └── transferencia_processor.py # Processador de transferências
-│   ├── logger.py                  # Serviço de logging
-│   └── transacao_service.py       # Serviço principal de transações
+├── services/                        # Serviços de negócio
+│   ├── processors/                  # Processadores específicos
+│   │   ├── deposito_processor.py        # Processador de depósitos
+│   │   ├── saque_processor.py           # Processador de saques
+│   │   └── transferencia_processor.py   # Processador de transferências
+│   ├── logger.py                    # Serviço de logging
+│   └── transacao_service.py         # Serviço principal de transações
 
-├── interfaces/                    # Contratos e abstrações
-│   ├── i_conta_repository.py      # Interface do repositório
-│   └── i_transacao_processor.py   # Interface dos processadores
+├── interfaces/                      # Contratos e abstrações
+│   ├── i_conta_repository.py        # Interface do repositório
+│   └── i_transacao_processor.py     # Interface dos processadores
 
-├── factories/                     # Factory para criação de processadores
-│   └── processor_factory.py       # Factory de processadores
+├── factories/                       # Factory para criação de processadores
+│   └── processor_factory.py         # Factory de processadores
 
-├── commands/                      # Padrão Command para transações
-│   └── transacao_command.py       # Comando para transações
+├── commands/                        # Padrão Command para transações
+│   └── transacao_command.py         # Comando para transações
 
-├── tests/                         # Testes unitários
-│   ├── test_conta_repository.py   # Testes do repositório
-│   └── test_transacao_service.py  # Testes do serviço
+├── tests/                           # Testes unitários
+│   ├── test_conta_repository.py     # Testes do repositório
+│   └── test_transacao_service.py    # Testes do serviço
 
-└── main.py                        # Ponto de entrada da aplicação
+└── main.py                          # Ponto de entrada da aplicação
 ```
 
 ## Padrões e Princípios Implementados
